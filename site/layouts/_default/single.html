@@ -7,11 +7,15 @@
     <h1>{{ .Params.slogan }}</h1>
     <ul>
       <li><span>Client:</span> {{ .Params.client_name }}</li>
-      {{ if isset .Params "services" }}
-        <li><span>Website:</span> {{ .Params.website }}</li>
+      {{ if .Params.website }}
+        <li><span>Website:</span> <a href="{{ .Params.website }}">{{ .Params.website }}</a></li>
       {{ end }}
-      <li><span>Our Role:</span> {{ .Params.our_role }}</li>
-      <li><span>Our Homework:</span> {{ .Params.services }}</li>
+      {{ if .Params.our_role }}
+        <li><span>Our Role:</span> {{ .Params.our_role }}</li>
+      {{ end }}
+      {{ if .Params.services }}
+        <li><span>Our Homework:</span> {{ .Params.services }}</li>
+      {{ end }}
     </ul>
   </div>
 </div>
