@@ -1,7 +1,19 @@
 {{ partial "head" . }}
+{{ partial "nav" . }}
 
 <div>
   <img alt="{{ .Params.client_name }} Logo" src="{{ .Params.client_logo }}">
+  <div class="">
+    <h1>{{ .Params.slogan }}</h1>
+    <ul>
+      <li><span>Client:</span> {{ .Params.client_name }}</li>
+      {{ if isset .Params "services" }}
+        <li><span>Website:</span> {{ .Params.website }}</li>
+      {{ end }}
+      <li><span>Our Role:</span> {{ .Params.our_role }}</li>
+      <li><span>Our Homework:</span> {{ .Params.services }}</li>
+    </ul>
+  </div>
 </div>
 
 {{ .Content }}
