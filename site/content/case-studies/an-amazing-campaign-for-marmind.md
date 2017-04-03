@@ -5,7 +5,7 @@ slogan: 'Marketing is too important to be left to the marketing department.  '
 client_name: Marmind
 client_logo: /img/marmind_logo.png
 our_role: Delivering awesome shit
-website: www.marmind.com
+website: ''
 services: 'Design, Branding, Videoediting, 3d Rendering'
 showcase:
   images:
