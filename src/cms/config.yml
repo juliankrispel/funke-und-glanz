@@ -24,6 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Showcase, name: showcase, widget: object, fields: [
           {label: Sections, name: sections, widget: list, fields: [
             {label: Title, name: title, widget: string},
+            {label: Black Background, name: black_background, widget: boolean},
             {label: Images, name: images, widget: list, fields:
               [
                 {label: Title, name: title, widget: string},

@@ -17,7 +17,18 @@ class ColorControl extends React.Component {
   }
 }
 
+class BooleanControl extends React.Component {
+  render() {
+    return (<input
+      type="checkbox"
+      checked={this.props.value}
+      onChange={(e) => this.props.onChange(e.target.value)}
+    />);
+  }
+}
+
 CMS.registerPreviewStyle("/css/main.css");
 CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerWidget("color", ColorControl);
+CMS.registerWidget("boolean", BooleanControl);
