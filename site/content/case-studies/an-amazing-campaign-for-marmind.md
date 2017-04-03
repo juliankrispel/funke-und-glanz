@@ -6,15 +6,16 @@ client_name: Upper Network GmbH
 client_logo: /img/marmind_logo.png
 thumbnail_image: /img/marmind_logo.png
 our_role: >-
-  Brand Creation | Website Re-design | 3D Icons & Visuals | Imagespot | Software
-  Interface | Marketing Concepts 
+  Creative Direction | Art Direction & Copyright | Regie | Online Development |
+  Production
 website: www.marmind.com
 services: >-
   Brand Creation | Website Re-design | 3D Icons & Visuals | Imagespot | Software
   Interface | Marketing Concepts
 showcase:
   sections:
-    - images:
+    - black_background: 'on'
+      images:
         - image: /img/sofrware_icons.png
           title: Software Icons
         - image: /img/erste_schritte.png
