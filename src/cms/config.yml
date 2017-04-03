@@ -12,13 +12,13 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/case-studies"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Client Name", name: "client_name", widget: "string"}
-      - {label: "Client Logo", name: "client_logo", widget: "image"}
-      - {label: "Our Role", name: "our_role", widget: "string"}
-      - {label: "Website", name: "website", widget: "string", required: false}
-      - {label: "Services", name: "services", widget: "string", required: false}
+      - {label: Title, name: title, widget: "string"}
+      - {label: "Publish Date", name: date, widget: "datetime"}
+      - {label: "Client Name", name: client_name, widget: "string"}
+      - {label: Client Logo, name: client_logo, widget: "image"}
+      - {label: "Our Role", name: our_role, widget: string}
+      - {label: Website, name: website, widget: string, required: false}
+      - {label: Services, name: services, widget: string, required: false}
       - {label: Showcase, name: showcase, widget: object, fields: [
           {label: Images, name: images, widget: list, fields:
             [
