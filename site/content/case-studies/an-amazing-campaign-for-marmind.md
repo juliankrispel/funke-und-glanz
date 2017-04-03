@@ -14,7 +14,8 @@ services: >-
   Interface | Marketing Concepts
 showcase:
   sections:
-    - images:
+    - black_background: 'on'
+      images:
         - image: /img/sofrware_icons.png
           title: Software Icons
         - image: /img/erste_schritte.png
