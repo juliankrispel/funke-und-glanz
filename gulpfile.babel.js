@@ -40,7 +40,9 @@ gulp.task("css", () => (
     .pipe(postcss([
       cssImport({from: "./src/css/main.css"}),
       cssnext(),
-      cssnano(),
+      cssnano({
+        autoprefixer: false,
+      }),
     ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
