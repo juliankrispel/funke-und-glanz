@@ -17,6 +17,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Slogan, name: slogan, widget: string}
       - {label: Client Name, name: client_name, widget: string}
       - {label: Client Logo, name: client_logo, widget: image}
+      - {label: Thumbnail Image, name: thumbnail_image, widget: image}
       - {label: Our Role, name: our_role, widget: string}
       - {label: Website, name: website, widget: string, required: false}
       - {label: Services, name: services, widget: string, required: false}
